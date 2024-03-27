@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script defer   src="/Js/main.js"></script>
+    <title>Capture And Flag</title>
+</head>
+
+    <body>
+        <nav class="main-menu">
+          <div>
+            <div class="user-info">
+              <img
+                src="/img/icon/man.png"
+                alt="user" />
+              <p>Name User</p>
+            </div>
+            <ul>
+              <li class="nav-item active">
+                <a href="#">
+                  <i class="fa fa-home nav-icon"></i>
+                  <span class="nav-text">Home</span>
+                </a>
+              </li>
+
+              <li class="nav-item ">
+                <a href="#">
+                  <i class="fa fa-user nav-icon"></i>
+                  <span class="nav-text">Profile</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-bars nav-icon"></i>
+                  <span class="nav-text">Challenges</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-arrow-trend-up nav-icon"></i>
+                  <span class="nav-text">Scoreboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-users nav-icon"></i>
+                  <span class="nav-text">User</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa-solid fa-check nav-icon"></i>
+                  <span class="nav-text">Notification</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <ul>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-gear nav-icon"></i>
+                <span class="nav-text">Settings</span>
+              </a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-right-from-bracket nav-icon"></i>
+                <span class="nav-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+        <section class="content">
+          <div class="left-content">
+            <div class="search-and-check">
+              <form class="search-box">
+                <input type="text" placeholder="Search Challenge..." />
+                <i class="bx bx-search"></i>
+              </form>
+              <div class="interaction-control-mobile interactions">
+                <i class="fa-regular fa-envelope notified"></i>
+                <i class="fa-regular fa-bell notified"></i>
+                <div class="toggle" onclick="switchTheme()">
+                  <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                  </div>
+                  <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="header">
+              <picture class="morning-img">
+                <div class="ctf-banner">
+                  <h2>CAPTURE THE FLAG</h2>
+                  <p>Selamat datang di CTFinAJA yang merupakan sebuah platform untuk belajar Cyber Security.</p>
+                  <p>CTF (Capture the Flag) adalah permainan dimana peserta diminta untuk mencari flag dengan format yang telah ditentukan dan memasukan flag untuk mencari point dan berkompetitif</p>
+              </div>
+              </picture>
+    
+              <picture class="night-img hidden">
+                <div class="ctf-banner">
+                  <h2>CAPTURE THE FLAG</h2>
+                  <p>Selamat datang di CTFinAJA yang merupakan sebuah platform untuk belajar Cyber Security.</p>
+                  <p>CTF (Capture the Flag) adalah permainan dimana peserta diminta untuk mencari flag dengan format yang telah ditentukan dan memasukan flag untuk mencari point dan berkompetitif</p>
+              </div>
+              </picture>
+            </div>
+    
+            <div class="upcoming-challanges">
+              <h1>challenges</h1>
+              <div class="challange-container">
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                      src="/img/challange/1.jpeg"
+                      alt="" />
+                    <p>30 Points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Basic Injection</h2>
+                    <p>Web || intelagent</p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">51241 solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/2.jpeg"
+                    alt="" />
+                    <p>10 Points</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Practice Flag</h2>
+                    <p>Miscellaneous || intelagent</p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">5024 Solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/3.jpeg"
+                    alt="" />
+                    <p>30 Points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Forensics 101</h2>
+                    <p>forensics || intelagent</p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">5322 Solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/4.jpeg"
+                    alt="" />
+                    <p>20 Points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Character Encoding</h2>
+                    <p>Cryptography || dknj11902</p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">1241 Solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/5.jpeg"
+                    alt="" />
+                    <p>10 points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Taking LS</h2>
+                    <p>forensics || alexkato29</p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">1241 Solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/6.jpeg"
+                    alt="" />
+                    <p>20 points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Base 2 2 the 6</h2>
+                    <p>Cryptography || pedro Contipelli</p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">1241 Solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/7.jpeg"
+                    alt="" />
+                    <p>20 points </p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Morse Code</h2>
+                    <p>Cryptography || yakatoi </p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">1235 Solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/8.jpeg"
+                    alt="" />
+                    <p>30 points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Reverse Polarity</h2>
+                    <p>Cryptography || aglickman</p>
+                  </div>
+                  <div class="challange-footer">
+                    <p style="background-color: #b31a4d">2342 Solves</p>
+                    <div class="btn-group">
+                      <button>Start</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="right-content">
+            <div class="interaction-control interactions">
+              <i class="fa-regular fa-envelope notified"></i>
+              <i class="fa-regular fa-bell notified"></i>
+              <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="Recent">
+              <h1>Recent Users</h1>
+              <div class="Recent-container">
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="/img/icon/recent-user1.png"
+                      alt="" />
+                    <p>Andhika Septian Prayoga <span>Complete Challenge 1</span></p>
+                  </div>
+                  <small>1 hour ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="/img/icon/recent-user2.png"
+                      alt="" />
+                    <p>
+                      Septian Prayoga
+                      <span>Complete Challenge 2</span>
+                    </p>
+                  </div>
+                  <small>4 hours ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="/img/icon/recent-user3.png"
+                      alt="" />
+                    <p>
+                      Dhika septian
+                      <span>Complete Challenge 3</span>
+                    </p>
+                  </div>
+                  <small>1 day ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="/img/icon/recent-user4.png"
+                      alt="" />
+                    <p>
+                      Tian Prayoga
+                      <span>Complete Challenge 4</span>
+                    </p>
+                  </div>
+                  <small>1 day ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="/img/icon/recent-user5.png"
+                      alt="" />
+                    <p>
+                      Asep tian 
+                      <span>Complete Challenge 5</span>
+                    </p>
+                  </div>
+                  <small>3 day ago</small>
+                </div>
+    
+                <div class="contact-status">
+                  <div class="contact-activity">
+                    <img
+                      src="/img/icon/recent-user6.png"
+                      alt="" />
+                    <p>
+                      Sybreed a Ka Andhika
+                      <span>Complete Challenge 6</span>
+                    </p>
+                  </div>
+                  <small>6 day ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </body>
+</html>

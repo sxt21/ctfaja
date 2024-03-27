@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script defer   src="/Js/main.js"></script>
+    <title>Capture And Flag</title>
+</head>
+
+    <body>
+        <nav class="main-menu">
+          <div>
+            <div class="user-info">
+              <img
+                src="/img/icon/man.png"
+                alt="user" />
+              <p>Name User</p>
+            </div>
+            <ul>
+              <li class="nav-item ">
+                <a href="#">
+                  <i class="fa fa-home nav-icon"></i>
+                  <span class="nav-text">Home</span>
+                </a>
+              </li>
+
+              <li class="nav-item active">
+                <a href="#">
+                  <i class="fa fa-user nav-icon"></i>
+                  <span class="nav-text">Profile</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="index.html">
+                  <i class="fa fa-bars nav-icon"></i>
+                  <span class="nav-text">Challenges</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-arrow-trend-up nav-icon"></i>
+                  <span class="nav-text">Scoreboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-users nav-icon"></i>
+                  <span class="nav-text">User</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa-solid fa-check nav-icon"></i>
+                  <span class="nav-text">Notification</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <ul>
+            <li class="nav-item">
+              <a href="settings.html">
+                <i class="fa fa-gear nav-icon"></i>
+                <span class="nav-text">Settings</span>
+              </a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-right-from-bracket nav-icon"></i>
+                <span class="nav-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+        <section class="content">
+          <div class="inside-content">
+            <div class="search-and-check">
+              <form class="search-box">
+                <input type="text" placeholder="Search Challenge..." />
+                <i class="bx bx-search"></i>
+              </form>
+              <div class="pop-up">
+              <div class="interaction-control-mobile interactions">
+                <i class="fa-regular fa-envelope notified"></i>
+                <i class="fa-regular fa-bell notified"></i>
+                <div class="toggle" onclick="switchTheme()">
+                  <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                  </div>
+                  <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="interaction-control interactions">
+              <i class="fa-regular fa-envelope notified"></i>
+              <i class="fa-regular fa-bell notified"></i>
+              <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="header">
+              <picture class="morning-img">
+                <div class="ctf-Profile">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="card shadow-sm">
+                              <div class="card-header bg-transparent text-center">
+                                <img class="profile_img" src="/img/icon/man.png">
+
+                              </div>
+                              <div class="card-body">
+                                <p class="mb-0"><strong class="pr-1">Name : &ensp;</strong>Lorem ipsum</p>
+                                <p class="mb-0"><strong class="pr-1">Email: &ensp;</strong>loremipsum@Gmail.com</p>
+                                <p class="mb-0"><strong class="pr-1">Team : &ensp;</strong> team Lorem ipsum</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="card shadow-sm">
+                              <div class="card-header bg-transparent border-0">
+                                <h3 class="mb-0">Score Challenge</h3>
+                              </div>
+                              <div class="card-body pt-0">
+                                <table class="table table-bordered">
+                                  <tr>
+                                    <th width="30%">Basic Injection</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Practice Flag	</th>
+                                    <td width="2%">:</td>
+                                    <td>10 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Forensics 101</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Character Encoding</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Morse Code</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                              <div style="height: 26px"></div>
+                            <div class="card shadow-sm">
+                              <div class="card-header bg-transparent border-0">
+                                <h3 class="mb-0">Bio :</h3>
+                              </div>
+                              <div class="card-body pt-0">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="ctf-Profile">
+                <h1>Recent Challenge</h1>
+          </div>
+              </picture>
+    
+              <picture class="night-img hidden">
+                <div class="ctf-Profile">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="card shadow-sm">
+                              <div class="card-header bg-transparent text-center">
+                                <img class="profile_img" src="/img/icon/man.png">
+
+                              </div>
+                              <div class="card-body">
+                                <p class="mb-0"><strong class="pr-1">Name : &ensp;</strong>Lorem ipsum</p>
+                                <p class="mb-0"><strong class="pr-1">Email: &ensp;</strong>loremipsum@Gmail.com</p>
+                                <p class="mb-0"><strong class="pr-1">Team : &ensp;</strong> team Lorem ipsum</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="card shadow-sm">
+                              <div class="card-header bg-transparent border-0">
+                                <h3 class="mb-0">Score Challenge</h3>
+                              </div>
+                              <div class="card-body pt-0">
+                                <table class="table table-bordered">
+                                  <tr>
+                                    <th width="30%">Basic Injection</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Practice Flag	</th>
+                                    <td width="2%">:</td>
+                                    <td>10 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Forensics 101</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Character Encoding</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                  <tr>
+                                    <th width="30%">Morse Code</th>
+                                    <td width="2%">:</td>
+                                    <td>30 Points</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                              <div style="height: 26px"></div>
+                            <div class="card shadow-sm">
+                              <div class="card-header bg-transparent border-0">
+                                <h3 class="mb-0">Bio :</h3>
+                              </div>
+                              <div class="card-body pt-0">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="ctf-Profile">
+                <h1>Recent Challenge</h1>
+          </div>
+              </picture>
+            </div>
+    
+            <div class="upcoming-challanges">
+              <div class="challange-container">
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                      src="/img/challange/1.jpeg"
+                      alt="" />
+                    <p>30 Points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Basic Injection</h2>
+                    <p>Web || intelagent</p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/2.jpeg"
+                    alt="" />
+                    <p>10 Points</p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Practice Flag</h2>
+                    <p>Miscellaneous || intelagent</p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/3.jpeg"
+                    alt="" />
+                    <p>30 Points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Forensics 101</h2>
+                    <p>forensics || intelagent</p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+   
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/4.jpeg"
+                    alt="" />
+                    <p>20 Points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Character Encoding</h2>
+                    <p>Cryptography || dknj11902</p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/5.jpeg"
+                    alt="" />
+                    <p>10 points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Taking LS</h2>
+                    <p>forensics || alexkato29</p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+   
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/6.jpeg"
+                    alt="" />
+                    <p>20 points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Base 2 2 the 6</h2>
+                    <p>Cryptography || pedro Contipelli</p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+    
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/7.jpeg"
+                    alt="" />
+                    <p>20 points </p>
+                    <i class="bx bxs-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Morse Code</h2>
+                    <p>Cryptography || yakatoi </p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+     
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="card challange-card">
+                  <div class="challange-header">
+                    <img
+                    src="/img/challange/8.jpeg"
+                    alt="" />
+                    <p>30 points</p>
+                    <i class="bx bx-heart like-btn"></i>
+                  </div>
+                  <div class="challange-content">
+                    <h2>Reverse Polarity</h2>
+                    <p>Cryptography || aglickman</p>
+                  </div>
+                  <div class="challange-footer">
+                    <div class="btn-group">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </body>
+</html>

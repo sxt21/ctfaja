@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/Js/settings.js">
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script defer   src="/Js/main.js"></script>
+    <title>Capture And Flag</title>
+</head>
+
+    <body>
+        <nav class="main-menu">
+          <div>
+            <div class="user-info">
+              <img
+                src="/img/icon/man.png"
+                alt="user" />
+              <p>Name User</p>
+            </div>
+            <ul>
+              <li class="nav-item ">
+                <a href="#">
+                  <i class="fa fa-home nav-icon"></i>
+                  <span class="nav-text">Home</span>
+                </a>
+              </li>
+
+              <li class="nav-item ">
+                <a href="profile.html">
+                  <i class="fa fa-user nav-icon"></i>
+                  <span class="nav-text">Profile</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="index.html">
+                  <i class="fa fa-bars nav-icon"></i>
+                  <span class="nav-text">Challenges</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-arrow-trend-up nav-icon"></i>
+                  <span class="nav-text">Scoreboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-users nav-icon"></i>
+                  <span class="nav-text">User</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa-solid fa-check nav-icon"></i>
+                  <span class="nav-text">Notification</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <ul>
+            <li class="nav-item active">
+              <a href="#">
+                <i class="fa fa-gear nav-icon"></i>
+                <span class="nav-text">Settings</span>
+              </a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-right-from-bracket nav-icon"></i>
+                <span class="nav-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+        <section class="content">
+          <div class="inside-content">
+            <div class="search-and-check">
+              <form class="search-box">
+                <input type="text" placeholder="Search Challenge..." />
+                <i class="bx bx-search"></i>
+              </form>
+              <div class="pop-up">
+              <div class="interaction-control-mobile interactions">
+                <i class="fa-regular fa-envelope notified"></i>
+                <i class="fa-regular fa-bell notified"></i>
+                <div class="toggle" onclick="switchTheme()">
+                  <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                  </div>
+                  <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="interaction-control interactions">
+              <i class="fa-regular fa-envelope notified"></i>
+              <i class="fa-regular fa-bell notified"></i>
+              <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="header">
+              <picture class="morning-img">
+                <div class="img-container">
+                    <div class="profile-pic">
+                        <label class="-label" for="file">
+                          <span class="glyphicon glyphicon-camera"></span>
+                          <span>Change Image</span>
+                        </label>
+                        <input id="file" type="file" onchange="loadFile(event)"/>
+                        <img src="/img/icon/man.png" id="output" width="200" />
+                      </div>
+                      <script>
+                        var loadFile = function (event) {
+                        var image = document.getElementById("output");
+                        image.src = URL.createObjectURL(event.target.files[0]);
+                    };
+                    </script>
+                    <div class="edit-form">  
+                        <form id="contact" action="" method="post">
+                          <h3>Settings Profile</h3>
+                          <fieldset>
+                            <h5>Name</h5>
+                            <input placeholder="Lorem Ipsum" type="text" tabindex="1">
+                          </fieldset>
+                          <fieldset>
+                            <h5>Email</h5>
+                            <input placeholder="loremipsum@gmail.com" type="email" tabindex="2">
+                          </fieldset>
+                          <fieldset>
+                            <h5>Phone</h5>
+                            <input placeholder="Team Lorem Ipsum" type="tel" tabindex="3">
+                          </fieldset>
+                          <fieldset>
+                            <h5>BIO</h5>
+                            <textarea placeholder="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum" tabindex="5"></textarea>
+                          </fieldset>
+                          <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="Edit Profile Saved">Submit Edit</button>
+                          </fieldset>
+                        </form>
+                      </div>
+                </div>
+                
+              </picture>
+    
+              <picture class="night-img hidden">
+                <div class="img-container">
+                    <div class="profile-pic">
+                        <label class="-label" for="file">
+                          <span class="glyphicon glyphicon-camera"></span>
+                          <span>Change Image</span>
+                        </label>
+                        <input id="file" type="file" onchange="loadFile(event)"/>
+                        <img src="/img/icon/man.png" id="output" width="200" />
+                      </div>
+                        <script>
+                            var loadFile = function (event) {
+                            var image = document.getElementById("output");
+                            image.src = URL.createObjectURL(event.target.files[0]);
+                        };
+                        </script>
+                    <div class="edit-form">  
+                        <form id="contact" action="" method="post">
+                          <h3>Settings Profile</h3>
+                          <fieldset>
+                            <h5>Name</h5>
+                            <input placeholder="Lorem Ipsum" type="text" tabindex="1">
+                          </fieldset>
+                          <fieldset>
+                            <h5>Email</h5>
+                            <input placeholder="loremipsum@gmail.com" type="email" tabindex="2">
+                          </fieldset>
+                          <fieldset>
+                            <h5>Phone</h5>
+                            <input placeholder="Team Lorem Ipsum" type="tel" tabindex="3">
+                          </fieldset>
+                          <fieldset>
+                            <h5>BIO</h5>
+                            <textarea placeholder="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum" tabindex="5"></textarea>
+                          </fieldset>
+                          <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="Edit Profile Saved">Submit Edit</button>
+                          </fieldset>
+                        </form>
+                      </div>
+                </div>
+              </picture>
+            </div>
+          </div>
+        </section>
+      </body>
+</html>
